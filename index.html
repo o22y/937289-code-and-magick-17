@@ -8,7 +8,30 @@
   <title>Код и Магия</title>
 </head>
 <body>
-
+  <script>
+    var fireballSize = 22;
+    var getFireballSpeed = function(left) {
+      if(left) {
+        return 5;
+      }
+      return 2;
+  };
+    var wizardSpeed = 3;
+    var wizardWidth = 70;
+    var getWizardHeight = function(wizardWidth) {
+      var calcWizardHeight = 1.337 * wizardWidth;
+      return calcWizardHeight;
+    }
+    var wizardHeight = getWizardHeight(wizardWidth);
+    function getWizardX(width) {
+      return width / 2 - wizardWidth / 2;
+    };
+    function getWizardY(height) {
+      return height * 0.33;
+    };
+  </script>
+  <script type="text/javascript" src="js/game.js">
+  </script>
 <header>
   <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62
         86">
